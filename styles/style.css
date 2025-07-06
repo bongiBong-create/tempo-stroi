@@ -28,12 +28,23 @@ a:hover {
   opacity: 0.5;
 }
 
+.sub__title {
+  font-family: var(--font-base);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
 
 /* ========================= HEADER */
 
 .header {
   padding-bottom: 60px;
   font-family: var(--font-base);
+  font-weight: 400;
+}
+
+.header__wrapper {
+  background-color: #fdfdfd;
 }
 
 .header__inner {
@@ -49,4 +60,24 @@ a:hover {
 
 .header__contacts-number {
   font-size: clamp(16px, 1.875vw, 22px);
+}
+
+/* ========opprtunities */
+.opportunities__inner-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 350px));
+  gap: 30px 10px;
+}
+
+.opportunities__item-title {
+  font-family: var(--font-base);
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.opportunities__item-info {
+  font-family: var(--font-base);
+  font-weight: 400;
+  font-size: 12px;
 }
