@@ -169,7 +169,10 @@ a:hover {
 
 .objects__grid {
   display: grid;
+  opacity: 0;
+  visibility: hidden;
   justify-content: space-between;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
   grid-template-columns: repeat(auto-fill, minmax(155px, 320px));
   gap: 25px;
 }
@@ -191,7 +194,11 @@ a:hover {
   font-weight: 400;
 }
 
-.objects__item-name {}
+.visible {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
 
 .hidden {
   display: none;

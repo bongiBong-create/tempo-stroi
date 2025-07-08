@@ -12,12 +12,18 @@ document.querySelectorAll(".object__tab").forEach((tab) => {
     const selectedTab =
       tab.textContent.trim() === "МКД в управлении" ? "mkd" : "heritage";
 
-    // 4. Показываем нужный блок, скрываем остальные
+    // 4. Работаем с контентом
     document.querySelectorAll(".objects__grid").forEach((grid) => {
       if (grid.dataset.content === selectedTab) {
         grid.classList.remove("hidden");
+        setTimeout(() => {
+          grid.classList.add("visible");
+        }, 10);
       } else {
-        grid.classList.add("hidden");
+        grid.classList.remove("visible");
+        setTimeout(() => {
+          grid.classList.add("hidden");
+        }, 400);
       }
     });
   });
