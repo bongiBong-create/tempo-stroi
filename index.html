@@ -7,6 +7,7 @@
   <title>ТемпоСтрой – Управляющая компания</title>
   <link rel="icon" href="./imgs/лого.svg" type="image/x-icon">
   <link rel="stylesheet" href="./styles/style.css">
+  <script type="module" src="./scripts/index.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,12 @@
     <div class="header__wrapper">
       <div class="header__inner container">
         <a href="/" class="logo">
-          <img src="./imgs/лого.svg" alt="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+          </svg>
+          <span class="logo__text">ТЕМПОСТРОЙ</span>
         </a>
         <div class="header__contacts">
           <a class="header__contacts-number" href="tel:+79252859628">+7 (925) 285 96 28</a>
@@ -23,7 +29,7 @@
           </p>
           <div class="header__contacts-mail">
             <span>Почта:</span>
-            <a href="mailto:tempostroi@yandex.ru">tempostroi@yandex.ru</a>
+            <a class="header__contacts-link" href="mailto:tempostroi@yandex.ru">tempostroi@yandex.ru</a>
           </div>
         </div>
       </div>
@@ -31,7 +37,37 @@
   </header>
 
   <main class="main container">
-    <section class="opportunities">
+    <section class="hero">
+      <div class="hero__img">
+        <img src="./imgs/main.jpg" alt="tempostroi">
+      </div>
+
+      <div class="hero__panel">
+        <div class="hero__panel-item">
+          <span class="hero__panel-title">14</span>
+          <p class="hero__panel-text">лет на рынке услуг</p>
+        </div>
+        <div class="rectangle">
+        </div>
+        <div class="hero__panel-item">
+          <span class="hero__panel-title">47 000 м2</span>
+          <p class="hero__panel-text">в управлении</p>
+        </div>
+        <div class="rectangle">
+        </div>
+        <div class="hero__panel-item">
+          <span class="hero__panel-title">8</span>
+          <p class="hero__panel-text">МКД в управлении</p>
+        </div>
+        <div class="rectangle">
+        </div>
+        <div class="hero__panel-item">
+          <span class="hero__panel-title">4</span>
+          <p class="hero__panel-text">дома в эксплуатации</p>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="opportunities">
       <h2 class="sub__title">
         Наши возможности
       </h2>
@@ -90,6 +126,212 @@
               Вы можете подать заявку в Аварийно-диспетчерскую службу по телефону в правом верхнем углу. Наши сотрудники
               примут заявку и оперативно назначат на нее подходящего специалиста. Ваша заявка будет выполнена в
               установленные регламентом сроки.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="objects">
+      <h2 class="objects__title title">
+        Действующие объекты
+      </h2>
+      <div class="objects__tabs">
+        <button class="object__tab btn active">
+          МКД в управлении
+        </button>
+
+        <button class="object__tab btn">
+          Объекты культурного наследия
+        </button>
+      </div>
+      <div class="objects__inner">
+        <div class="objects__grid" data-content="mkd">
+          <!-- Контент для МКД -->
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/mkd/home1.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Ул. Машкова, 14
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/mkd/home2.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">М.Каковинский пер., 6/1
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/mkd/home3.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Ул. Ольховская, 15
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/mkd/home4.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Ул. Сретенка, 26/1
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/mkd/home5.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Армянский пер, 7
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/mkd/home6.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Б. Казенный пер., 5
+
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/mkd/home7.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Б. Казенный пер., 7
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/mkd/home8.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Б. Казенный пер., 5А
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="objects__grid hidden" data-content="heritage">
+          <!-- Контент для культурного наследия -->
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/culture/culture1.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Сверчков пер., 8 стр.3
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/culture/culture2.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Потаповский пер., 16 стр.3
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/culture/culture3.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Армянский пер., 3-5
+              </div>
+            </a>
+          </div>
+          <div class="objects__item">
+            <a class="objects__item-link" href="/">
+              <div class="objects__item-img">
+                <img src="./imgs/objects/culture/culture4.jpg" alt="home1">
+              </div>
+              <div class="objects__item-name">Б. Николопесковский пер., 6
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="service__inner">
+        <div class="service__main">
+          <div class="service__main-img">
+            <img src="./imgs/service1.jpg" alt="service">
+          </div>
+          <div class="service__main-content">
+            <h2 class="service__main-title sub__title">
+              УСЛУГИ
+            </h2>
+            <p class="service__main-text">
+              Комплексное управление, эксплуатация, техническое обслуживание и текущий ремонт жилого фонда
+            </p>
+          </div>
+        </div>
+
+        <div class="service__rectangle">
+          <div class="service__circle">
+
+          </div>
+          <div class="service__circle">
+
+          </div>
+          <div class="service__circle">
+
+          </div>
+          <div class="service__circle">
+
+          </div>
+        </div>
+
+        <div class="service__content">
+          <div class="service__content-item">
+            <h3 class="service__content-title">
+              Содержание и текущий ремонт инженерных систем в круглосуточном режиме
+            </h3>
+            <p class="service__content-text">
+              тепловых, электрических сетей, систем холодного и горячего водоснабжения и канализации, вентиляции,
+              прочего инженерного оборудования
+            </p>
+          </div>
+          <div class="service__content-item">
+            <h3 class="service__content-title">
+              Выполнение работ по содержанию зданий
+            </h3>
+            <p class="service__content-text">
+              регулярная санитарная уборка мест общего пользования, технических помещений, вывоз крупногабаритного
+              мусора и бытовых отходов
+            </p>
+          </div>
+          <div class="service__content-item">
+            <h3 class="service__content-title">
+              Круглосуточное аварийно - диспетчерское обслуживание
+            </h3>
+            <p class="service__content-text">
+              незамедлительное устранение аварийных ситуаций, контроль за состоянием общедомового имущества и
+              оперативное управление техническим персоналом
+            </p>
+          </div>
+          <div class="service__content-item">
+            <h3 class="service__content-title">
+              Выполнение работ по техническому обслуживанию
+            </h3>
+            <p class="service__content-text">
+              содержание кровли и фасада здания; проведение текущего, восстановительного, планового ремонта мест общего
+              пользования; техническое обслуживание лифтов; обслуживание систем ДУ и ППА; техническое обслуживание ИТП и
+              прочее
             </p>
           </div>
         </div>
