@@ -28,3 +28,8 @@ document.querySelectorAll(".object__tab").forEach((tab) => {
     });
   });
 });
+
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  loop: false,
+});
