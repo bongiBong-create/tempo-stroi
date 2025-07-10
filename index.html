@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ТемпоСтрой – Управляющая компания</title>
-  <link rel="icon" href="./imgs/лого.svg" type="image/x-icon">
+  <link rel="icon" href="./imgs/logo.svg" type="image/x-icon">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -22,16 +22,19 @@
           </div>
           <span class="logo__text">ТЕМПОСТРОЙ</span>
         </a>
-        <div class="header__contacts">
-          <a class="header__contacts-number" href="tel:+79252859628">+7 (925) 285 96 28</a>
-          <p class="text">
-            Диспетчерская работает круглосуточно.
-          </p>
-          <div class="header__contacts-mail">
-            <span>Почта:</span>
-            <a class="header__contacts-link" href="mailto:tempostroi@yandex.ru">tempostroi@yandex.ru</a>
-          </div>
-        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">О компании</a>
+            </li>
+            <li class="nav__item">
+              <a href="#"> Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
@@ -39,39 +42,73 @@
   <main class="main">
     <section class="hero">
       <div class="hero__inner">
-        <div class="overlay">
+        <div class="overlay"></div>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Управляющая компания «Темпострой»
+          </h1>
+          <p>
+            Полный спектр жилищно-коммунальных услуг: обслуживание и ремонт инженерных систем 24/7.
+          </p>
+          <a class="hero__btn">
+            Услуги
+          </a>
+        </div>
+      </div>
+    </section>
 
+    <section class="about">
+      <div class="about__inner container">
+        <h2 class="title about__title">
+          ПОЧЕМУ ВЫБИРАЮТ НАС?
+        </h2>
+        <div class="about__content">
+          <ul class="about__list">
+            <li class="about__lit-item">
+              <h3 class="about__item-title rocket">
+                Оперативность
+              </h3>
+              <p class="about__item-text">
+                Ваша заявка выполняется либо сразу в день обращения, либо вы получаете точную информацию о сроках
+                исполнения
+              </p>
+            </li>
+            <li class="about__lit-item">
+              <h3 class="about__item-title prof">
+                Профессионализм
+              </h3>
+              <p class="about__item-text">
+                В нашем штате состоят специалисты всех направлений: инженерный состав, рабочие текущего ремонта,
+                слесари, электрики, кровельщики, альпинисты, уборщики лестничных клеток, рабочие комплексной уборки,
+                водители уборочных машин
+              </p>
+            </li>
+            <li class="about__lit-item">
+              <h3 class="about__item-title hru">
+                Прозрачность
+              </h3>
+              <p class="about__item-text">
+                Ежегодные отчетные собрания <br>
+                Согласование работ с Советом дома <br>
+                Обоснование тарифа <br>
+              </p>
+            </li>
+            <li class="about__lit-item">
+              <h3 class="about__item-title doverie">
+                Доверие
+              </h3>
+              <p class="about__item-text">
+                Наши сотрудники всегда открыты для общения. Мы прислушиваемся к пожеланиям каждого собственника МКД
+              </p>
+            </li>
+          </ul>
         </div>
-        <h1 class="hero__title">
-          Темпострой — это надёжная управляющая компания, предоставляющая полный спектр жилищно - коммунальных услуг. Мы
-          обеспечиваем круглосуточное содержание и ремонт инженерных систем, включая системы теплоснабжения,
-          водоснабжения, электроснабжения, вентиляции и другого оборудования.
-        </h1>
       </div>
     </section>
-    <section class="panel container">
-      <div class="hero__panel">
-        <div class="hero__panel-item">
-          <span class="hero__panel-title">14</span>
-          <p class="hero__panel-text">лет на рынке услуг</p>
-        </div>
-        <div class="hero__panel-item">
-          <span class="hero__panel-title">8</span>
-          <p class="hero__panel-text">МКД в управлении</p>
-        </div>
-        <div class="hero__panel-item">
-          <span class="hero__panel-title">4</span>
-          <p class="hero__panel-text">дома в эксплуатации</p>
-        </div>
-        <div class="hero__panel-item">
-          <span class="hero__panel-title">47 000</span>
-          <p class="hero__panel-text">м2 в управлении</p>
-        </div>
-      </div>
-    </section>
+
     <section class="objects container">
       <h2 class="objects__title title">
-        Действующие объекты
+        ДЕЙСТВУЮЩИЕ ОБЪЕКТЫ
       </h2>
       <div class="objects__tabs">
         <button class="object__tab btn active">
@@ -201,83 +238,10 @@
         </div>
       </div>
     </section>
-    <!-- 
-    <section class="service">
-      <div class="service__inner container">
-        <div class="service__main">
-          <div class="service__main-img">
-            <img src="./imgs/service1.jpg" alt="service">
-          </div>
-          <div class="service__main-content">
-            <h2 class="service__main-title sub__title">
-              УСЛУГИ
-            </h2>
-            <p class="service__main-text">
-              Комплексное управление, эксплуатация, техническое обслуживание и текущий ремонт жилого фонда
-            </p>
-          </div>
-        </div>
-
-        <div class="service__rectangle">
-          <div class="service__circle">
-
-          </div>
-          <div class="service__circle">
-
-          </div>
-          <div class="service__circle">
-
-          </div>
-          <div class="service__circle">
-
-          </div>
-        </div>
-
-        <div class="service__content">
-          <div class="service__content-item">
-            <h3 class="service__content-title">
-              Содержание и текущий ремонт инженерных систем в круглосуточном режиме
-            </h3>
-            <p class="service__content-text">
-              тепловых, электрических сетей, систем холодного и горячего водоснабжения и канализации, вентиляции,
-              прочего инженерного оборудования
-            </p>
-          </div>
-          <div class="service__content-item">
-            <h3 class="service__content-title">
-              Выполнение работ по содержанию зданий
-            </h3>
-            <p class="service__content-text">
-              регулярная санитарная уборка мест общего пользования, технических помещений, вывоз крупногабаритного
-              мусора и бытовых отходов
-            </p>
-          </div>
-          <div class="service__content-item">
-            <h3 class="service__content-title">
-              Круглосуточное аварийно - диспетчерское обслуживание
-            </h3>
-            <p class="service__content-text">
-              незамедлительное устранение аварийных ситуаций, контроль за состоянием общедомового имущества и
-              оперативное управление техническим персоналом
-            </p>
-          </div>
-          <div class="service__content-item">
-            <h3 class="service__content-title">
-              Выполнение работ по техническому обслуживанию
-            </h3>
-            <p class="service__content-text">
-              содержание кровли и фасада здания; проведение текущего, восстановительного, планового ремонта мест общего
-              пользования; техническое обслуживание лифтов; обслуживание систем ДУ и ППА; техническое обслуживание ИТП и
-              прочее
-            </p>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section class="sertificate">
       <div class="sertificate__inner container">
-        <h2 class="title sertificate__title">Гарантии качества</h2>
+        <h2 class="title sertificate__title">ГАРАНТИИ КАЧЕСТВА</h2>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
