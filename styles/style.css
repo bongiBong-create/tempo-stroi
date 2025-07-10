@@ -392,7 +392,6 @@ a:hover {
 
 .sertificate__title {
   margin-bottom: 20px;
-  text-align: right;
 }
 
 /* footer */
@@ -415,11 +414,13 @@ a:hover {
 }
 
 /* adaptive */
-/* @media (width < 1400px) {
-  .hero__panel {
+
+@media (width < 990px) {
+  .objects__grid {
     justify-content: space-around;
+    gap: 10px;
   }
-} */
+}
 
 @media (width < 768px) {
   .hero__panel {
@@ -428,5 +429,9 @@ a:hover {
 
   .hero__panel-item {
     grid-column: 5 span;
+  }
+
+  .about__list {
+    grid-template-columns: 1fr
   }
 }
