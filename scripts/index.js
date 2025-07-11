@@ -1,4 +1,19 @@
-document.querySelectorAll(".object__tab").forEach((tab) => {
+const companySection = document.querySelector(".company");
+const tabs = document.querySelectorAll(".object__tab");
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  loop: false,
+});
+
+const burger = document.getElementById("burger");
+const navList = document.getElementById("navList");
+
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  navList.classList.toggle("active");
+});
+
+tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     // 1. Удаляем класс 'active' у всех табов
     document
@@ -28,13 +43,6 @@ document.querySelectorAll(".object__tab").forEach((tab) => {
     });
   });
 });
-
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
-  loop: false,
-});
-
-const companySection = document.querySelector(".company");
 
 const observer = new IntersectionObserver(
   (entries) => {
