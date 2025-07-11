@@ -218,7 +218,7 @@ a:hover {
 }
 
 .company__item-title {
-  font-size: clamp(30px, 2.08vw, 35px);
+  font-size: clamp(20px, 2.08vw, 35px);
   font-weight: 700;
 }
 
@@ -257,7 +257,8 @@ a:hover {
 
 /* about */
 .about {
-  padding: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .about__title {
@@ -486,6 +487,11 @@ a:hover {
 }
 
 /* adaptive */
+@media (width < 1200px) {
+  .company__list .company__list-item, .company_subtitle {
+    margin-left: 0;
+  }
+}
 
 @media (width < 990px) {
   .objects__grid {
