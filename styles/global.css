@@ -1,3 +1,5 @@
+@import "./fonts.css";
+
 :root {
   --padding-x: 20px;
   --container-width: 1100px;

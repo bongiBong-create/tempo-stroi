@@ -1,17 +1,17 @@
+import { initBurger } from "./helpers/burger.js";
+
 const companySection = document.querySelector(".company");
 const tabs = document.querySelectorAll(".object__tab");
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   loop: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 
-const burger = document.getElementById("burger");
-const navList = document.getElementById("navList");
-
-burger.addEventListener("click", () => {
-  burger.classList.toggle("active");
-  navList.classList.toggle("active");
-});
+initBurger();
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
