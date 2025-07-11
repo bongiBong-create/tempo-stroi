@@ -120,7 +120,7 @@ a:hover {
   background-size: cover;
   position: relative;
   background-attachment: fixed;
-  height: 700px;
+  height: calc(100vh - 111px);
 }
 
 .overlay {
