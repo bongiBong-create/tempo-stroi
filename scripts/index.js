@@ -33,3 +33,24 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   loop: false,
 });
+
+const companySection = document.querySelector(".company");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        companySection.classList.add("company--visible");
+      } else {
+        companySection.classList.remove("company--visible");
+      }
+    });
+  },
+  {
+    threshold: 0.3, // срабатывает, когда хотя бы 30% блока видно
+  }
+);
+
+if (companySection) {
+  observer.observe(companySection);
+}
