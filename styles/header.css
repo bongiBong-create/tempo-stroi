@@ -1,5 +1,13 @@
 /* ========================= HEADER */
 
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
 .header {
   position: sticky;
   top: 0;

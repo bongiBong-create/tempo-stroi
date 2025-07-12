@@ -1,3 +1,41 @@
 @import "./normalize.css";
 @import "./global.css";
 @import "./header.css";
+@import "./footer.css";
+
+.services__inner {
+  display: flex;
+}
+
+.rectangle {
+  width: 5px;
+  background-color: var(--font-color);
+  position: relative;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+}
+
+.services__item {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-family: var(--font-base);
+  color: var(--font-color);
+}
+
+.services__item-title {
+  font-weight: 700;
+}
+
+.services__item-text {
+  font-weight: 400;
+}
+
+.services__item-img img {
+  width: 40px;
+}

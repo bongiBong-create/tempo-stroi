@@ -1,0 +1,18 @@
+.footer {
+  font-family: var(--font-base);
+  text-align: center;
+  border-top: 1px solid #F1F3F4;
+  color: #023c6c;
+}
+
+.footer__inner {
+  padding-block: 10px;
+}
+
+.footer__bold {
+  font-weight: 700;
+}
+
+.footer__small {
+  font-weight: 400;
+}

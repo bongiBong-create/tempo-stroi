@@ -1,11 +1,19 @@
 @import "./normalize.css";
 @import "./global.css";
 @import "./header.css";
+@import "./footer.css";
 
 /* hero */
 .hero {
   font-family: var(--font-base);
   color: #023c6c;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero__inner {
@@ -189,7 +197,7 @@
 
 .rocket::after {
   content: "";
-  background: url("../imgs/about1.png") no-repeat;
+  background: url("../imgs/icons/about1.png") no-repeat;
   width: 50px;
   height: 50px;
   background-size: cover;
@@ -197,7 +205,7 @@
 
 .prof::after {
   content: "";
-  background: url("../imgs/about2.png") no-repeat;
+  background: url("../imgs/icons/about2.png") no-repeat;
   width: 50px;
   height: 60px;
   background-size: cover;
@@ -205,7 +213,7 @@
 
 .hru::after {
   content: "";
-  background: url("../imgs/about3.png") no-repeat;
+  background: url("../imgs/icons/about3.png") no-repeat;
   width: 55px;
   height: 60px;
   background-size: cover;
@@ -214,7 +222,7 @@
 .doverie::after {
   position: absolute;
   content: "";
-  background: url("../imgs/about4.png") no-repeat;
+  background: url("../imgs/icons/about4.png") no-repeat;
   width: 120px;
   height: 50px;
   background-size: cover;
@@ -358,25 +366,6 @@
 
 .sertificate__title {
   margin-bottom: 50px;
-}
-
-/* footer */
-.footer {
-  font-family: var(--font-base);
-  text-align: center;
-  border-top: 1px solid #F1F3F4;
-}
-
-.footer__inner {
-  padding-block: 10px;
-}
-
-.footer__bold {
-  font-weight: 700;
-}
-
-.footer__small {
-  font-weight: 400;
 }
 
 /* adaptive */
