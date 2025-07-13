@@ -34,6 +34,13 @@ a:hover {
   font-weight: 700;
 }
 
+.subtitle {
+  font-size: clamp(24px, 2.6vw, 30px);
+  font-family: var(--font-base);
+  color: #023c6c;
+  font-weight: 700;
+}
+
 .btn {
   background: transparent;
   border: 2px solid #023c6c;

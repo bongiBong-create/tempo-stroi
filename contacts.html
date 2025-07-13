@@ -45,8 +45,128 @@
   </header>
 
   <main>
-    <h1 style="text-align: center;">Контакты</h1>
+    <section class="contatcs">
+      <div class="contacts__inner container">
+        <h1 class="title contatcs__title">
+          КАК С НАМИ СВЯЗАТЬСЯ
+        </h1>
+
+        <div class="section email">
+          <h2 class="subtitle contacts__subtitle">
+            E - MAIL
+          </h2>
+
+          <div class="email__info address__item contacts__item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
+            </svg>
+
+            <a class="email__link contacts__item-title"
+              href="mailto:tempostroi@yandex.ru"><b>tempostroi@yandex.ru</b></a>
+          </div>
+        </div>
+
+        <div class="section numbers">
+          <h2 class="subtitle contacts__subtitle">НОМЕРА</h2>
+          <ul class="contacts__list">
+            <li class="address__item contacts__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+              </svg>
+              <div class="numbers-info">
+                <a class="numbers__link" href="tel:89252859628"><b>+7 (925) 285 96 28</b></a><br>
+                Диспетчерская работает круглосуточно.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section form">
+          <h2 class="subtitle contacts__subtitle">ОБРАТНАЯ СВЯЗЬ</h2>
+          <div class="form__container">
+            <form class="form__inner" action="">
+              <div class="form__section">
+                <label for="firstname">Имя</label>
+                <input type="text" id="firstname" name="firstname" required>
+              </div>
+              <div class="form__section">
+                <label for="lastname">Фамилия</label>
+                <input type="text" id="lastname" name="lastname" required>
+              </div>
+              <div class="form__section">
+                <label for="phone">Номер телефона</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form__section">
+                <label for="email">Почта</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form__section form__textarea">
+                <label for="message">Сообщение</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+
+              <button class="form__btn" type="submit">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="section address">
+          <h2 class="subtitle contacts__subtitle">АДРЕС</h2>
+          <ul class="address__list contacts__list">
+            <li class="address__item contacts__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+
+              <div class="address__item-ifo">
+                <b class="address__item-title contacts__item-title">Юр. адрес:</b> <br>
+                <p>443068, г. Самара ул. Ново-Садовая, 106, к. 80, офис 322-324</p>
+              </div>
+            </li>
+            <li class="address__item contacts__item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+              <div class="adress__item-ifo">
+                <b class="address__item-title contacts__item-title">Факт. адрес:</b> <br>
+                <p>443068, г. Самара ул. Ново-Садовая, 106, к. 80, офис 322-324</p>
+              </div>
+            </li>
+          </ul>
+          <div style="position: relative; width: 100%; height: 0; padding-bottom: 71.43%; overflow: hidden;">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=37.645501%2C55.751929&mode=search&sll=37.645509%2C55.751927&text=55.751927%2C37.645509&z=18"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__inner container">
+      <p class="footer__bold">
+        © 2025 Управляющая компания ООО «ТЕМПОСТРОЙ»
+      </p>
+      <p class="footer__small">Лицензия на осуществление предпринимательской деятельности по управлению
+        многоквартирными
+        домами № 077002228 от
+        26.05.2021 г.</p>
+    </div>
+  </footer>
 </body>
 
 </html>
