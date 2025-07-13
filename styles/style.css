@@ -9,13 +9,6 @@
   color: #023c6c;
 }
 
-img,
-video {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .hero__inner {
   background: url("../imgs/main2.jpg") 50% 50% no-repeat;
   background-size: cover;
